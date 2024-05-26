@@ -1,0 +1,218 @@
+:root {
+  --clr-dm: hsl(300, 43%, 22%);
+  --clr-sp: hsl(333, 80%, 67%);
+
+  --ntrl-500: hsl(303, 10%, 53%);
+  --ntrl-300: hsl(300, 24%, 96%);
+  --ntrl-100: hsl(0, 0%, 100%);
+}
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+* {
+  margin: 0;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+#root,
+#__next {
+  isolation: isolate;
+}
+
+body {
+  height: 100vh;
+  font-family: "League Spartan";
+  color: var(--clr-dm);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+}
+
+.wrapper {
+  max-width: 250px;
+  background-color: white;
+  padding: 1rem;
+  text-align: center;
+}
+
+.stars {
+  display: flex;
+  justify-content: center;
+}
+
+.card {
+  background-color: var(--clr-dm);
+  color: white;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  text-align: left;
+  border-radius: 7.5px;
+  font-weight: 200;
+  line-height: 1.2;
+  font-size: 0.8rem;
+}
+
+.card__img {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+}
+
+.card__name {
+  margin-bottom: 1rem;
+  margin-left: 1rem;
+  font-size: ;
+}
+
+h1 {
+  font-size: 1.5rem;
+  padding: 2rem;
+  padding-bottom: 1rem;
+}
+
+.intro {
+  margin-bottom: 2rem;
+  font-size: 0.8rem;
+  line-height: 1.5;
+}
+
+.stars {
+  padding: 0.6rem;
+}
+
+.one__star {
+  width: 12px;
+  margin-inline: 0.2rem;
+}
+
+.star__review {
+  font-size: 0.75rem;
+  font-weight: 700;
+}
+
+.upper__right {
+  margin-bottom: 3rem;
+}
+
+.card__name {
+  font-size: 0.7rem;
+  font-weight: 600;
+}
+
+.verified_buyer {
+  color: var(--clr-sp);
+  font-weight: 300;
+}
+
+.card__text {
+  font-size: 0.75rem;
+}
+
+@media screen and (min-width: 1440px) {
+  .wrapper {
+    max-width: 1200px;
+  }
+
+  .upper {
+    display: grid;
+    grid-template-columns: 400px 780px;
+    margin-bottom: 2rem;
+    align-items: center;
+  }
+
+  .lower {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 2rem;
+  }
+  .card {
+    min-height: 200px;
+    max-width: 400px;
+    padding: 2rem;
+  }
+  .card__text {
+    font-size: 1rem;
+    line-height: 1.5;
+    margin-top: 1.5rem;
+  }
+
+  .card__name {
+    font-size: 1rem;
+    margin-left: 2rem;
+    margin-bottom: -1rem;
+  }
+
+  .card__img {
+    width: 40px;
+    height: 40px;
+    margin-bottom: 0.5rem;
+  }
+  .lower__roberts {
+    transform: translateY(20px);
+  }
+
+  .lower__wallace {
+    transform: translateY(40px);
+  }
+
+  h1 {
+    font-size: 3.5rem;
+    text-align: left;
+    margin-left: -2rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .intro {
+    font-size: 1rem;
+    text-align: left;
+  }
+
+  .comments {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    margin-block: 3rem;
+  }
+  .reviews {
+    transform: translateX(-300px);
+  }
+  .guru {
+    transform: translateX(-250px);
+  }
+  .besttech {
+    transform: translateX(-175px);
+  }
+  .one__star {
+    width: 25px;
+  }
+  .star__review {
+    font-size: 1rem;
+  }
+}
